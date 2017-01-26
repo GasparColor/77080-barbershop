@@ -1,135 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Барбершоп</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body>
+  <!-- page-header -->
 
-<!-- header -->
+  <header class="page-header clearfix">
+    <div class="container ">
+      <div class="page-logo">
+        <a href="index.html">
+          <img src="img/header-logo.png" width="111" height="24" alt="Barbershop">
+        </a>
+      </div>
 
-  <header class="page-header">
-    <div class="container">
       <nav class="page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="#">Информация</a></li>
-          <li class="page-nav__item"><a href="#">Новости</a></li>
-          <li class="page-nav__item"><a href="#">Прайс-лист</a></li>
-          <li class="page-nav__item"><a href="#">Магазин</a></li>
-          <li class="page-nav__item"><a href="#">Контакты</a></li>
+          <li class="page-nav__item">
+            <a href="#">Информация</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">Прайс-лист</a>
+          </li>
+          <li class="page-nav__item page-nav__item--active">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
 
       <div class="user-block">
         <a class="user-block__login" href="#">Вход</a>
       </div>
+
     </div>
   </header>
+<main class="catalog-item-bg">
 
-  <main class="container">
+  <!-- navigation -->
 
-<!-- logo -->
+  <section class="page-catalog container">
+    <h1 class="page-catalog__title">Набор для путешествий «Baxter of California»</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="#">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#">Магазин</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#">Средства для ухода</a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--active">
+        <a href="#">Набор для путешествий «Baxter of California»</a>
+      </li>
+    </ul>
+  </section>
 
-    <div class="site-logo">
-      <img src="img/site-logo.png" width="368" height="204" alt="Барбершоп-лого">
+  <!-- product-section -->
+
+  <section class="product-section container clearfix">
+
+    <div class="product-images">
+      <h2 class="visually-hidden">Изображения</h2>
+      <img class="product-images__item" src="img/product-travelkit-01.jpg" width="460" height="498" alt="изображение товара">
+      <img class="product-images__item" src="img/product-travelkit-02.jpg" width="140" height="149" alt="изображение товара">
+      <img class="product-images__item" src="img/product-travelkit-03.jpg" width="140" height="149" alt="изображение товара">
+      <img class="product-images__item" src="img/product-travelkit-04.jpg" width="140" height="149" alt="изображение товара">
     </div>
 
-<!-- advantages -->
+    <div class="product-info">
+      <div class="product-info__descr">
+        <h2 class="visually-hidden">Описание товара</h2>
+        <span>Есть в наличии</span>
+        <span>Артикул: dexter-ae</span>
 
-    <section class="advantages container">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <div class="advantages__item">
-        <b class="advantages__name">Быстро</b>
-        <p class="advantages__text">
-          Мы делаем свою работу быстро! Два часа пролетят незаметно и вы &mdash; счастливый обладатель стильной стрижки-минутки!
+        <p class="product-info__text">
+          Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после
+          бритья, шампунь. Набор также может стать отличным подарком.
         </p>
+        <span class="product-info__coast">2 900 руб.</span>
+        <a href="#" class="product-info__link">Купить</a>
       </div>
 
-      <div class="advantages__item">
-        <b class="advantages__name">Круто</b>
-        <p class="advantages__text">
-          Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
-        </p>
-      </div>
-
-      <div class="advantages__item">
-        <b class="advantages__name">Дорого</b>
-        <p class="advantages__text">
-          Наши мастера &mdash; профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
-        </p>
-      </div>
-
-    </section>
-
-<!-- site-content -->
-
-    <div class="site-content">
-
-<!-- content-news -->
-
-      <section class="content-news">
-        <h2 class="content-news__title">Новости</h2>
-        <ul class="content-news__list">
-          <li class="content-news__item">
-            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2017-01-11">11 января</time>
-          </li>
-          <li class="content-news__item">
-            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2017-01-18"> 18 января</time>
-          </li>
+      <div class="product-set">
+        <h2 class="product-set__title">В набор входят:</h2>
+        <ul class="product-set__list">
+          <li class="product-set__item">Средство для умывания (50 мл)</li>
+          <li class="product-set__item">Увлажняющий крем (50 мл)</li>
+          <li class="product-set__item">Увлажняющий крем (50 мл)</li>
+          <li class="product-set__item">Крем после бритья, шампунь (50 мл)</li>
+          <li class="product-set__item">Удобная кожаная косметичка</li>
         </ul>
-        <a class="content-news__all-news-link" href="#">Все новости</a>
-      </section>
-
-<!-- content-photogallery -->
-
-      <section class="content-photogallery">
-        <h2 class="content-photogallery__title">Фотогалерея</h2>
-        <figure>
-          <img class="content-photogallery__img" src="img/gallery-01.jpg" width="286" height="164" alt="Интерьер">
-        </figure>
-        <button class="content-photogallery__btn content-photogallery__btn--prev">Назад</button>
-        <button class="content-photogallery__btn content-photogallery__btn--next">Вперед</button>
-      </section>
-
-<!-- content-contacts-->
-
-      <section class="content-contacts">
-        <h2 class="content-contacts__title">Контактная информация</h2>
-        <p>
-          Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
-        </p>
-        <p>
-          Время работы:<br> пн — пт: с 10:00 до 22:00<br> сб — вс: с 10:00 до 19:00
-        </p>
-        <a class="content-contacts__link content-contacts__link--how-find" href="#">Как найти</a>
-        <a class="content-contacts__link content-contacts__link--feedback" href="#">Обратная связь</a>
-      </section>
-
-<!-- content-registration -->
-
-      <section class="content-registration">
-        <h2 class="content-registration__title">Записаться</h2>
-        <p class="content-registration__text">
-          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="content-registration__form" action="" method="post">
-          <input class="content-registration__date" type="text" name="date" value="" placeholder="Дата">
-          <input class="content-registration__time" type="text" name="time" value="" placeholder="Время">
-          <input class="content-registration__name" type="text" name="name" value="" placeholder="Ваше имя">
-          <input class="content-registration__phone" type="tel" name="phone" value="" placeholder="Телефон">
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
+      </div>
     </div>
-  </main>
+  </section>
+</main>
 
-<!-- footer -->
+  <!-- footer -->
 
   <footer class="page-footer">
-
+    <div class="container clearfix">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <p class="footer-contacts__text">
@@ -151,6 +131,7 @@
       <span>Разработано:</span>
       <a href="#">htmlacademy.ru</a>
     </section>
+    </div>
   </footer>
 
 </body>

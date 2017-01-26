@@ -5,6 +5,7 @@ body{
   font-weight: bold;
   font-family: "PT Sans",sans-serif,serif;
 }
+
 h1{
   font-size: 30px;
   line-height: 42px;
@@ -18,4 +19,240 @@ h2{
   color: #000;
   font-weight: bold;
   font-family: "PT Sans",sans-serif,serif;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+.visually-hidden{
+  display:none;
+}
+.bg-image{
+  background: url("../img/index-background.jpg")
+}
+
+
+/* header
+==================================================*/
+
+.page-header{
+  background-color: #000;
+}
+.page-nav__list{
+  font-size: 0;
+  float: left;
+}
+.page-nav__item{
+  list-style-type: none;
+  margin:30px 20px;
+  display: inline-block;
+}
+.page-nav__item a,.user-block__login{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.user-block{
+  float:right;
+  margin:30px 20px;
+}
+.user-block__login{
+
+}
+
+.page-logo{
+  float:left;
+  margin-top:27px
+}
+
+/* logo
+==================================================*/
+
+.site-logo{
+  width: 368px;
+  margin: 60px auto;
+}
+
+/* advantages
+==================================================*/
+
+.advantages__item:last-child{margin-right: 0}
+.advantages__item{
+  width: 300px;
+  float:left;
+  margin-right: 20px;
+}
+.advantages__name{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+.advantages__text{
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* content-news
+==================================================*/
+.site-content,.catalog-item-bg{
+  background:url("../img/bg-contentblock.png");
+}
+.content-news{
+  width: 400px;
+  float: left;
+}
+.content-news__title{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.content-news__item{
+  list-style-type: none;
+}
+.content-news__item p{
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.content-news__all-news-link{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  display: inline-block;
+  background: #000;
+  padding: 20px 45px;
+}
+
+/* content-photogallery
+==================================================*/
+.content-photogallery{
+  width: 400px;
+  float: right;
+}
+
+.content-photogallery__title{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.content-photogallery__btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  display: inline-block;
+  background: #000;
+  padding: 20px 45px;
+}
+/* content-contacts
+==================================================*/
+.content-contacts{
+  width: 400px;
+  float: left;
+}
+.content-contacts__title{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* content-registration
+==================================================*/
+.content-registration{
+  width: 400px;
+  float: right;
+}
+.content-registration__title{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* page-footer
+==================================================*/
+.page-footer{
+  background-color: #212121;
+}
+.footer-contacts__text,.footer-contacts__link,.footer-social-links p,.copyright span {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color:#fff;
+  text-transform: uppercase;;
+
+}
+.footer-contacts, .footer-social-links{
+  float: left;
+}
+.copyright{
+  float:right;
+}
+
+/* navigation
+==================================================*/
+.page-catalog__title{
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.breadcrumbs{
+  font-size: 0;
+  float: left;
+  padding-left:0;
+}
+.breadcrumbs__item{
+  list-style-type: none;
+  margin:30px 20px;
+  display: inline-block;
+}
+.breadcrumbs__item a{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+/* product-section
+==================================================*/
+.product-images{
+  float:left;
+  width: 460px;
+}
+.product-images__item:last-child{margin-right: 0}
+.product-images__item{
+  margin-right: 16px;
+  margin-top:8px;
+}
+
+.product-info{
+  width: 390px;
+  float:right;
 }
