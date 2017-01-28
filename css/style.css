@@ -28,6 +28,7 @@ h2{
 .container{
   width: 940px;
   margin: 0 auto;
+  outline: 1px solid black;
 }
 .visually-hidden{
   display:none;
@@ -254,5 +255,20 @@ h2{
 
 .product-info{
   width: 390px;
+  float:right;
+}
+
+/* filter
+==================================================*/
+
+.product-filter{
+  width:220px;
+  float: left;
+}
+
+/* catalog-content
+==================================================*/
+.catalog{
+  width: 700px;
   float:right;
 }
