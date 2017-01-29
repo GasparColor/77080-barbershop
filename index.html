@@ -1,239 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Барбершоп</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <!-- page-header -->
+<body>
 
+<!-- header -->
+
+<div class="bg-image">
   <header class="page-header clearfix">
-    <div class="container ">
-      <div class="page-logo">
-        <a href="index.html">
-          <img src="img/header-logo.png" width="111" height="24" alt="Barbershop">
-        </a>
-      </div>
-
+    <div class="container">
       <nav class="page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item">
-            <a href="#">Информация</a>
-          </li>
-          <li class="page-nav__item">
-            <a href="#">Новости</a>
-          </li>
-          <li class="page-nav__item">
-            <a href="#">Прайс-лист</a>
-          </li>
-          <li class="page-nav__item page-nav__item--active">
-            <a href="#">Магазин</a>
-          </li>
-          <li class="page-nav__item">
-            <a href="#">Контакты</a>
-          </li>
+          <li class="page-nav__item"><a href="#">Информация</a></li>
+          <li class="page-nav__item"><a href="#">Новости</a></li>
+          <li class="page-nav__item"><a href="#">Прайс-лист</a></li>
+          <li class="page-nav__item"><a href="catalog.html">Магазин</a></li>
+          <li class="page-nav__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
 
       <div class="user-block">
         <a class="user-block__login" href="#">Вход</a>
       </div>
-
     </div>
   </header>
 
-  <!-- navigation -->
+  <main class="container">
 
-  <section class="page-catalog container">
-    <h1 class="page-catalog__title">Средства для ухода</h1>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item">
-        <a href="#">Главная</a>
-      </li>
-      <li class="breadcrumbs__item">
-        <a href="#">Магазин</a>
-      </li>
-      <li class="breadcrumbs__item breadcrumbs__item--active">
-        <a href="#">Средства для ухода</a>
-      </li>
-    </ul>
-  </section>
+<!-- logo -->
 
-  <!-- filter -->
-  
-  <div class="container clearfix">
+    <div class="site-logo">
+      <img src="img/site-logo.png" width="368" height="204" alt="Барбершоп-лого">
+    </div>
 
-    <aside class="product-filter">
-      <form action="get">
+<!-- advantages -->
 
-        <div class="producers">
-          <h2 class="producers__title">Производители</h2>
+    <section class="advantages container clearfix">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__item">
+        <b class="advantages__name">Быстро</b>
+        <p class="advantages__text">
+          Мы делаем свою работу быстро! Два часа пролетят незаметно и вы &mdash; счастливый обладатель стильной стрижки-минутки!
+        </p>
+      </div>
 
-          <input name="Baxter" id="Baxter" type="checkbox" checked>
-          <label for="Baxter">Baxter of California</label>
+      <div class="advantages__item">
+        <b class="advantages__name">Круто</b>
+        <p class="advantages__text">
+          Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+        </p>
+      </div>
 
-          <input name="Natty" id="Natty" type="checkbox">
-          <label for="Natty">Mr Natty</label>
+      <div class="advantages__item">
+        <b class="advantages__name">Дорого</b>
+        <p class="advantages__text">
+          Наши мастера &mdash; профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+        </p>
+      </div>
 
-          <input name="Suavecito" id="Suavecito" type="checkbox" checked>
-          <label for="Suavecito">Suavecito</label>
+    </section>
 
-          <input name="Malin" id="Malin" type="checkbox">
-          <label for="Malin">Malin+Goetz</label>
+<!-- site-content -->
 
-          <input name="Murray" id="Murray" type="checkbox">
-          <label for="Murray">Murray’s</label>
+    <div class="site-content container clearfix">
 
-          <input name="American" id="American" type="checkbox" checked>
-          <label for="American">American Crew</label>
-        </div>
+<!-- content-news -->
 
-        <div class="product-groups">
-          <h2 class="product-groups__title">Группы товаров:</h2>
+      <section class="content-news">
+        <h2 class="content-news__title">Новости</h2>
+        <ul class="content-news__list">
+          <li class="content-news__item">
+            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2017-01-11">11 января</time>
+          </li>
+          <li class="content-news__item">
+            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2017-01-18"> 18 января</time>
+          </li>
+        </ul>
+        <a class="content-news__all-news-link" href="#">Все новости</a>
+      </section>
 
-          <input type="radio" id="shaving" name="product" value="shaving">
-          <label for="shaving">Бритвенные принадлежности</label>
+<!-- content-photogallery -->
 
-          <input type="radio" id="care" name="product" value="care">
-          <label for="care">Средства для ухода</label>
-
-          <input type="radio" id="accessories" name="product" value="accessories">
-          <label for="accessories">Аксессуары</label>
-        </div>
-        <button type="submit">Показать</button>
-      </form>
-    </aside>
-
-    <!-- catalog-content -->
-
-    <div class="catalog">
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-01.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Набор для путешествий</span>
-            «Baxter of California»
-          </a>
-        </h1>
-        <span class="catalog-content__coast">2 900 руб.</span>
-        <a class="catalog-content__link" href="#">Купить</a>
-      </article>
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-02.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Увлажняющий кондиционер</span>
-            «Baxter of California»
-          </a>
-        </h1>
-        <span class="catalog-content__coast">750 руб.</span>
-        <a class="catalog-content__link" href="#">Купить</a>
-      </article>
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-03.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Гель для волос</span>
-            «Suavecito»
-          </a>
-        </h1>
-        <span class="catalog-content__coast">290 руб.</span>
-        <a class="catalog-content__link" href="#">Купить</a>
-      </article>
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-04.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Глина для укладки волос</span>
-            «American crew»
-          </a>
-        </h1>
-        <span class="catalog-content__coast">500 руб.</span>
-        <a class="catalog-content__link" href="#">Купить</a>
-      </article>
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-05.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Гель для волос</span>
-            «American crew»
-          </a>
-        </h1>
-        <span class="catalog-content__coast">300 руб.</span>
-        <a class="catalog-content__link" href="#">Купить</a>
-      </article>
-
-      <article class="catalog-content">
-        <a href="#" class="catalog-content__img"><img src="img/catalog-06.jpg" width="220" height="165" alt="изображение-товара"></a>
-
-        <h1>
-          <a class="catalog-content__name" href="#">
-            <span>Набор для бритья</span>
-            «Baxter of California»
-          </a>
-        </h1>
-      </a>
-      <span class="catalog-content__coast">3 900 руб.</span>
-      <a class="catalog-content__link" href="#">Купить</a>
-    </article>
-  </div>
-  <!-- pages-control -->
-
-  <ul class="page-control">
-    <li class="page-control__item">
-      <a href="#">1</a>
-    </li>
-    <li class="page-control__item">
-      <a href="#">2</a>
-    </li>
-    <li class="page-control__item page-control__item--active">
-      <a href="#">3</a>
-    </li>
-    <li class="page-control__item">
-      <a href="#">4</a>
-    </li>
-  </ul>
+      <section class="content-photogallery">
+        <h2 class="content-photogallery__title">Фотогалерея</h2>
+        <figure>
+          <img class="content-photogallery__img" src="img/gallery-01.jpg" width="286" height="164" alt="Интерьер">
+        </figure>
+        <button class="content-photogallery__btn content-photogallery__btn--prev">Назад</button>
+        <button class="content-photogallery__btn content-photogallery__btn--next">Вперед</button>
+      </section>
 </div>
+
+<div class="site-content container clearfix">
+<!-- content-contacts-->
+
+      <section class="content-contacts">
+        <h2 class="content-contacts__title">Контактная информация</h2>
+        <p>
+          Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
+        </p>
+        <p>
+          Время работы:<br> пн — пт: с 10:00 до 22:00<br> сб — вс: с 10:00 до 19:00
+        </p>
+        <a class="content-contacts__link content-contacts__link--how-find" href="#">Как найти</a>
+        <a class="content-contacts__link content-contacts__link--feedback" href="#">Обратная связь</a>
+      </section>
+
+<!-- content-registration -->
+
+      <section class="content-registration">
+        <h2 class="content-registration__title">Записаться</h2>
+        <p class="content-registration__text">
+          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form class="content-registration__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="content-registration__date" type="text" name="date" value="" placeholder="Дата">
+          <input class="content-registration__time" type="text" name="time" value="" placeholder="Время">
+          <input class="content-registration__name" type="text" name="name" value="" placeholder="Ваше имя">
+          <input class="content-registration__phone" type="tel" name="phone" value="" placeholder="Телефон">
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  </div>
+
 <!-- footer -->
 
-<footer class="page-footer">
-  <div class="container clearfix">
-  <section class="footer-contacts">
-    <h2 class="visually-hidden">Наши контакты</h2>
-    <p class="footer-contacts__text">
-      Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a class="footer-contacts__link" href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
-    </p>
-  </section>
+  <footer class="page-footer">
+    <div class="container clearfix">
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="footer-contacts__text">
+        Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a class="footer-contacts__link" href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+      </p>
+    </section>
 
-  <section class="footer-social-links">
-    <h2 class="visually-hidden"> Ссылки на соц.сети</h2>
-    <p>Давайте дружить!</p>
-    <a class="footer-social-links__item footer-social-links__item--vk" href="#">Вконтакте</a>
-    <a class="footer-social-links__item footer-social-links__item--fb" href="#">Фейсбук</a>
-    <a class="footer-social-links__item footer-social-links__item--inst" href="#">Инстраграм</a>
-  </section>
+    <section class="footer-social-links">
+      <h2 class="visually-hidden"> Ссылки на соц.сети</h2>
+      <p>Давайте дружить!</p>
+      <a class="footer-social-links__item footer-social-links__item--vk" href="#">Вконтакте</a>
+      <a class="footer-social-links__item footer-social-links__item--fb" href="#">Фейсбук</a>
+      <a class="footer-social-links__item footer-social-links__item--inst" href="#">Инстраграм</a>
+    </section>
 
-  <section class="copyright">
-    <h2 class="visually-hidden">Копирайт</h2>
-    <span>Разработано:</span>
-    <a href="#">htmlacademy.ru</a>
-  </section>
-  </div>
-</footer>
+    <section class="copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
+      <span>Разработано:</span>
+      <a href="#">htmlacademy.ru</a>
+    </section>
+    </div>
+  </footer>
 
 </body>
 
